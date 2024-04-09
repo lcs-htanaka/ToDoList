@@ -28,6 +28,7 @@ struct ItemView: View {
     List{
       ItemView(currentItem: firstItem)
         ItemView(currentItem: secondItem)
+        ItemView(currentItem: thirdItem)
 
     }
     
