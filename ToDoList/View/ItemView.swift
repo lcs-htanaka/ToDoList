@@ -9,19 +9,16 @@ import SwiftUI
 
 struct ItemView: View {
     
-    let title: String
-    let done: Bool
+    let currentItem: TodoItem
     
     
     
     var body: some View {
         Label(
             title: {
-                Text(
-                    title
-                )
+                Text(currentItem.title)
             }, icon: {
-                Image(systemName: done == true ? "checkmark.circle" : "circle")
+                Image(systemName: currentItem.done == true ? "checkmark.circle" : "circle")
             }
         )
     }
@@ -29,7 +26,9 @@ struct ItemView: View {
 
 #Preview {
     List{
-        ItemView(title: "Have a nap", done: false)
+      ItemView(currentItem: firstItem)
+        ItemView(currentItem: secondItem)
+
     }
     
 }
