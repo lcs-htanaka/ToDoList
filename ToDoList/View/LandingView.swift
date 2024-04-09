@@ -82,16 +82,11 @@ struct ItemView: View {
     var body: some View {
         Label(
             title: {
-                Text(title)
-            },
-            icon: { 
-                if done == true {
-                Image(systemName: "checkmark.circle")
-            } else {
-                Image(
-                    systemName: "circle"
+                Text(
+                    title
                 )
-            }
+            }, icon: {
+                Image(systemName: done == true ? "checkmark.circle" : "circle")
             }
         )
     }
