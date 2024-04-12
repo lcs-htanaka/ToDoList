@@ -27,11 +27,6 @@ class TodoItem: Identifiable {
     let thirdItem = TodoItem(title: "Go for a run around campus", done: false)
 
 
-
-
-
-
-
 let exampleItems = [
 
    firstItem

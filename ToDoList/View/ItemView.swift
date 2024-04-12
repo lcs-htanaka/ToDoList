@@ -28,12 +28,12 @@ struct ItemView: View {
     }
 }
 
-#Preview {
-    List{
-        ItemView(currentItem: Binding.constant(firstItem))
-        ItemView(currentItem: Binding.constant(secondItem))
-        ItemView(currentItem: Binding.constant(thirdItem))
+//#Preview {
+//    List{
+//        ItemView(currentItem: Binding.constant(firstItem))
+//        ItemView(currentItem: Binding.constant(secondItem))
+//        ItemView(currentItem: Binding.constant(thirdItem))
 
-    }
+//    }
     
-}
+//}
